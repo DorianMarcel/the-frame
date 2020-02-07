@@ -1,0 +1,42 @@
+function findLongestWordLength(str) {
+var words = str.split(" "); // changes input into an array
+var longest = "";           // equals an empty string, this is where we will store the longest string 
+
+for (var word of words) {  
+if (word.length > longest.length) longest = word; //this loop starts checking with the, then with quick (which equals 5)
+}
+console.log(longest.length);
+return longest.length;     //changes the longest word into its numerical equivalent
+findLongestWord('The quick brown fox jumped over the lazy dog');
+}
+
+
+---------------------------------------------------------
+var fruits = ["apple", "mango", "cherries")
+
+for (var i=0; i<fruits.length; i++) {
+console.log(fruits[i]);  //This function deals with index
+}
+
+for (var fruit of fruits) {
+console.log(fruit) //this loop goes over the element instead of index
+}
+--------------------------------------------------------
+function reverseString(str) {   //this is to reverse a string
+var strArr = str.split(" ");    // this converts a string into an array  (.split changes str into an array)
+var reverseStrArray = strArr.reverse(); //this reverses the array to olleh
+var reversedString = reverseStrArray.join(" ") //.join makes it into a string again
+return reversedString
+}
+reverseString('hello');
+console.log(random.reverse())
+var random = ["h", "e", "l"];
+ _optional more sleek option_
+ function reverseString(str) {
+ return str.split(" ").reverse().join(" ");
+ _more from scratch option_
+ function reverseString(str) {
+ var final = " ";
+ for (var i=str.length - 1; i >= 0; i--) {
+ final += str[i];
+ }
